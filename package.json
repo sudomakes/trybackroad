@@ -1,0 +1,21 @@
+{
+  "name": "trybackroad",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "tsx watch ./src/main.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@backroad/backroad": "*"
+  },
+  "devDependencies": {
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  }
+}
