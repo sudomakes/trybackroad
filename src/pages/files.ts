@@ -2,21 +2,6 @@ import { BackroadNodeManager } from "@backroad/backroad";
 import Jimp from "jimp";
 import { addSidebar } from "./sidebar";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export const filesPage = async (br: BackroadNodeManager) => {
   addSidebar(br);
   const [photo] = br.fileUpload({ label: "Pick Image" });

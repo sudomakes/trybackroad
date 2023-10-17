@@ -1,23 +1,6 @@
 import { BackroadNodeManager } from "@backroad/backroad";
 import { addSidebar } from "./sidebar";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export const sipPage = (br: BackroadNodeManager) => {
   addSidebar(br);
   const [col1, col2] = br.columns({ columnCount: 2 });
@@ -34,15 +17,6 @@ export const sipPage = (br: BackroadNodeManager) => {
   col1.write({ body: `## Final Amount: $${finalAmount.toFixed()}` });
   col2.pie(chartData);
 };
-
-
-
-
-
-
-
-
-
 
 const doMath = (amount: number, rate: number, years: string) => {
   const period = { "5 Years": 5, "10 Years": 10, "15 Years": 15 }[years]!;
