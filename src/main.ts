@@ -1,4 +1,7 @@
 import { run } from "@backroad/backroad";
+import { filesPage } from "./pages/files";
+import { sipPage } from "./pages/sip";
+import { addSidebar } from "./pages/sidebar";
 run(async (br) => {
   br.write({
     body: `# 🛣️ Welcome to Backroad
@@ -39,4 +42,13 @@ This is a quick start template to help you get started developing backroad apps.
 ---
 Backroad is currently in beta-development phase. If you like the idea behind it and would like to see it develop further. Please [consider starring Backroad on Github](https://github.com/sudomakes/backroad), or tell your developer friends about it. Thanks for trying backroad 💖`,
   });
+
+  addSidebar(br);
+  filesPage(
+    br.page({
+      path: "/files",
+    })
+  );
+
+  sipPage(br.page({ path: "/sip" }));
 });

@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@backroad/backroad": "*"
+    "@backroad/backroad": "*",
+    "jimp": "^0.22.10"
   },
   "devDependencies": {
     "tsx": "^3.13.0",
